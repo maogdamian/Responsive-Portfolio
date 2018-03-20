@@ -1,78 +1,71 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-us">
+
 <head>
-	<title>Damian Bennett Bio</title>
-
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-	<link rel="stylesheet" type="text/css" href="assets/css/contact-style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Contact | Damian Bennett</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 
-	<!-- main header -->
-	<header>
-		<h1>Damian Bennett</h1>
-	</header>
+  <!-- Header section include logo and navigation links -->
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Damian Bennett</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-	<div id="nav-bar">
-		<nav>
-  			<a href="index.html">About</a> |
-  			<a href="portfolio.html">Portfolio</a> |
-  			<a href="contact.html">Contact</a>
-		</nav>
-	</div>
+  <div id="main-container" class="container">
 
-	<!-- Contact Box Div -->
-	<div class="container">
+   <!-- Contact form -->
+    <section class="main-section">
+      <h1>Contact</h1>
 
-		<div id="contact">
-			<section id="title">
-			<h1>Contact</h1>
-			</section>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+    </section>
 
-				<section class="contact-form">
-				<form>
-					<h5>Name</h5>
-					<input type="text" placeholder="Full Name"></input>
+    <!-- Sidebar containing social links -->
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
 
-					<h5>Email</h5>
-					<input type="email" placeholder="name@email.com"></input>
+        <a href="https://github.com/maogdamian"><img src="assets/images/github.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/damian-bennett-1577682a"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/9157411/damian-bennett"><img src="assets/images/stackoverflow.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
 
-					<h5> Message </h5>
-					<textarea rows="20" cols="26" name="Type here"></textarea>
-
-
-					<input type="submit"></input>
-
-
-				</form>
-
-
-
-				</section>
-	
-		</div>
-
-		<!-- Side Bar Div-->
-		<div class="connect-box">
-			<h3> Connect with Me </h3>
-				<ul>
-				<li><a href="https://github.com/maogdamian"><img src="assets/images/github.png" alt="Github" class="connect"></a></li>
-
-       			<li><a href="https://www.linkedin.com/in/damian-bennett-1577682a"><img src="assets/images/linkedin.png" alt="Linkedin" class="connect"></a></li>
-
-        		<li><a href="https://stackoverflow.com/users/9157411/damian-bennett"><img src="assets/images/stackoverflow.png" alt="Overflow" class="connect"></a></li>
-				
-				</ul>
-		</div>
-	</div>
-
-		<!-- Footer -->
-		<footer>
-  			<center><p> &copy; Copyright 2018 Damian Bennett </p>
-  			</center>
-  		
-		</footer>
-
+  <footer>
+    <div class="container">
+      Copyright &copy; 2018 Damian Bennett
+    </div>
+  </footer>
 </body>
+
 </html>
